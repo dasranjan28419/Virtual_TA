@@ -3,6 +3,7 @@
 Virtual_TA contains analysis and visualizations for "Ask the Virtual TA" survey responses. The repository includes a Python script that performs simple lexicon-based sentiment analysis and generates a circular word cloud and sentiment distribution chart from survey feedback.
 
 ########################################################
+
 Table of contents
 - [Repository contents](#repository-contents)
 - [Quick start](#quick-start)
@@ -15,6 +16,7 @@ Table of contents
 
 
 ########################################################
+
 Repository contents
 - [Ask the Virtual TA and Share your Learning Survey Report.csv](https://github.com/dasranjan28419/Virtual_TA/blob/main/Ask%20the%20Virtual%20TA%20and%20Share%20your%20Learning%20Survey%20Report.csv)  
   Raw survey CSV file used as input for analysis.
@@ -29,6 +31,7 @@ Repository contents
 
 
 ########################################################
+
 Quick start
 
 1. Prerequisites
@@ -61,6 +64,7 @@ How the analysis works (summary)
 
 
 ########################################################
+
 Inputs & outputs
 - Input: CSV file containing survey responses. The script automatically finds the feedback column by searching for "experience" in column names; adjust the script if your feedback column uses a different name.
 - Outputs:
