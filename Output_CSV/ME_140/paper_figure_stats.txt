@@ -1,0 +1,105 @@
+========================================================================
+  ME 140 (Dec 2025) -- paper figure statistics
+========================================================================
+Respondents (analysis sample) : 93
+Virtual TA users (Q5 > Never) : 79
+Non-users (Q5 = Never)        : 14  (15.1% non-adoption)
+
+[Fig 1] Engagement among users
+    1–2 times total           18  (22.8%)
+    A few times per month     41  (51.9%)
+    1–2 times per week        15  (19.0%)
+    3+ times per week          5  (6.3%)
+    once-or-twice share      : 22.8%
+    weekly-or-more share     : 25.3%  (n=20)
+    session <5 min             9  (11.4%)
+    session 5–15 min          20  (25.3%)
+    session 15–30 min         27  (34.2%)
+    session 30–60 min         18  (22.8%)
+    session >60 min            5  (6.3%)
+    under 15 min share       : 36.7%
+
+[Fig 2] Reported benefits (learning n=79, efficiency n=79)
+    Deeper concept understanding      56  (70.9%)
+    Connected topics better           42  (53.2%)
+    Gained subject confidence         40  (50.6%)
+    No effect on learning             10  (12.7%)
+    Less time stuck                   61  (77.2%)
+    More efficient studying           42  (53.2%)
+    Saved overall time                35  (44.3%)
+    Replaced other resources          24  (30.4%)
+    No efficiency benefit              8  (10.1%)
+    ANY learning benefit              69  (87.3%)
+    ANY efficiency benefit            71  (89.9%)
+
+[Fig 3 / Table] Spearman rho with usage intensity, within users
+    outcome                                rho         p     p_adj    n
+    Any learning benefit                +0.394     0.000     0.003   79*
+    Increased confidence                +0.298     0.008     0.031   79*
+    Deeper conceptual understanding     +0.259     0.021     0.056   79 
+    Any efficiency benefit              +0.236     0.037     0.073   79 
+    Connections across topics           +0.206     0.069     0.111   79 
+    Would recommend to future students  +0.081     0.476     0.573   79 
+    Wants a VTA in other courses        -0.037     0.748     0.748   79 
+    Encountered flawed responses        -0.077     0.501     0.573   79 
+
+[Fig 4] Dose-response by usage band (band sizes: [18, 41, 20])
+    Connections across topics  17% (3/18)  71% (29/41)  50% (10/20)
+    Any efficiency benefit     72% (13/18)  95% (39/41)  95% (19/20)
+    Deeper understanding       50% (9/18)  73% (30/41)  85% (17/20)
+
+[Fig 5] Perceptions (depth n=79, Likert n=79)
+    Changed how I think about problem solving         18  (22.8%)
+    Encouraged me to ask                              33  (41.8%)
+    Worry it may weaken independent problem solving   14  (17.7%)
+    Felt I understood more than I actually did        14  (17.7%)
+    constructive (items 2+3 of instrument)   51  (64.6%)
+    concern      (items 1+4 of instrument)   28  (35.4%)
+    Likert Strongly disagree              0  (0.0%)
+    Likert Disagree                      14  (17.7%)
+    Likert Neither agree nor disagree    30  (38.0%)
+    Likert Agree                         29  (36.7%)
+    Likert Strongly agree                 6  (7.6%)
+    agree or stronger : 44.3%   neutral: 38.0%
+
+[Adoption] Was adoption patterned by student background?
+    Familiarity x adoption (5x2 chi2, NOT USED): chi2(4)=11.42, p=0.022, min expected=0.15  <- assumption violated
+    Familiarity (high vs low/mod) x adoption : Fisher OR=0.57, p=0.343; chi2(1)=0.35, V=0.061, min expected=3.61
+        table (rows low/mod, high; cols non-user, user): [[9, 60], [5, 19]]
+    Pre-course AI use x adoption (5x2) : chi2(4)=4.54, p=0.337, V=0.221, min expected=1.05
+    Pre-course AI use (freq vs infreq) x adoption : Fisher OR=2.37, p=0.243; table [[11, 48], [3, 31]]
+    Intensity vs prior familiarity            rho=+0.168, p=0.138, n=79
+    Intensity vs pre-course academic AI use   rho=+0.169, p=0.136, n=79
+    Intensity vs this-semester AI use         rho=+0.395, p=0.000, n=79
+
+[Users vs non-users] Structurally confounded contrasts
+    Use x any learning benefit     chi2(1)=23.45, p=1.28e-06, V=0.505, min expected=2.83
+        Fisher exact: OR=23.00, p=5.131e-06
+        null option chosen by 10/13 non-users vs 10/79 users
+    Use x any efficiency benefit   chi2(1)=22.11, p=2.572e-06, V=0.490, min expected=2.40
+        Fisher exact: OR=19.97, p=1.384e-05
+        null option chosen by 9/13 non-users vs 8/79 users
+
+[Endorsement] Within users vs across all respondents
+    Would recommend        all respondents : rho=+0.149, p=0.1552, n=93
+    Wants VTA elsewhere    all respondents : rho=+0.081, p=0.442, n=93
+    Wants a VTA in other courses users only      : rho=-0.037, p=0.748, n=79
+    Would recommend to future students users only      : rho=+0.081, p=0.476, n=79
+    Users answering 'Yes' to recommend : 59/79 (74.7%)
+    Users answering 'Yes' to want      : 44/79 (55.7%)
+
+[Accuracy x depth] Mann-Whitney U on the quality-concern item
+    U=629.0, p=0.868, rank-biserial r=+0.023
+    medians 3.0 vs 3.0; means 3.32 vs 3.39; n1=56, n2=23
+
+[Study strategy] Single-choice distribution among users
+    Used VTA after self-attempt         42  (53.2%)
+    Attempted harder problems           15  (19.0%)
+    Used VTA before self-attempt        12  (15.2%)
+    Accepted answers uncritically        6  (7.6%)
+    Led to procrastination               4  (5.1%)
+
+[Adherence] Single-choice distribution among users
+    Always rule-compliant               39  (50.6%)
+    Used to improve own work            31  (40.3%)
+    Possibly not approved                7  (9.1%)

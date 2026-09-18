@@ -1,0 +1,86 @@
+Question,Question_text,Type,N_respondents,Label_confidence,Category,Count,Percentage
+Q1,How would you rate your prior familiarity with AI tools before this course?,single-select,93,unconfirmed,Moderate,52,55.9
+Q1,How would you rate your prior familiarity with AI tools before this course?,single-select,93,unconfirmed,High,16,17.2
+Q1,How would you rate your prior familiarity with AI tools before this course?,single-select,93,unconfirmed,Low,16,17.2
+Q1,How would you rate your prior familiarity with AI tools before this course?,single-select,93,unconfirmed,Very high,8,8.6
+Q1,How would you rate your prior familiarity with AI tools before this course?,single-select,93,unconfirmed,None (no prior familiarity),1,1.1
+Q2,"Before this course, how often did you use AI tools for academic work?",single-select,93,instrument,A few times per month,31,33.3
+Q2,"Before this course, how often did you use AI tools for academic work?",single-select,93,instrument,A few times per week,26,28.0
+Q2,"Before this course, how often did you use AI tools for academic work?",single-select,93,instrument,A few times per semester,21,22.6
+Q2,"Before this course, how often did you use AI tools for academic work?",single-select,93,instrument,Daily or almost daily,8,8.6
+Q2,"Before this course, how often did you use AI tools for academic work?",single-select,93,instrument,Never,7,7.5
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",single-select,93,instrument,A few times per month,35,37.6
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",single-select,93,instrument,A few times per week,35,37.6
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",single-select,93,instrument,A few times per semester,15,16.1
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",single-select,93,instrument,Daily or almost daily,5,5.4
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",single-select,93,instrument,Never,3,3.2
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Explaining difficult concepts,86,92.5
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Preparing for midterms/exams,59,63.4
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Checking my homework or solutions,53,57.0
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Generating or troubleshooting code,47,50.5
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Creating study notes / summaries,46,49.5
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Checking my understanding of class notes,32,34.4
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Brainstorming ideas,24,25.8
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Mainly for non-academic tasks,8,8.6
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,Drafting written assignments,6,6.5
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,multi-select,93,instrument,I generally do not use AI tools,1,1.1
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,single-select,93,instrument,A few times per month,41,44.1
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,single-select,93,instrument,1-2 times total,18,19.4
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,single-select,93,instrument,1-2 times per week,15,16.1
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,single-select,93,instrument,Never,14,15.1
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,single-select,93,instrument,3+ times per week,5,5.4
+Q6,When in the semester did you use it most?,single-select,92,instrument,Mostly near exams / deadlines,29,31.5
+Q6,When in the semester did you use it most?,single-select,92,instrument,Mostly in the middle of the course,21,22.8
+Q6,When in the semester did you use it most?,single-select,92,instrument,Consistently throughout the semester,16,17.4
+Q6,When in the semester did you use it most?,single-select,92,instrument,I only tried it once or twice,13,14.1
+Q6,When in the semester did you use it most?,single-select,92,instrument,Mostly at the beginning of the course,13,14.1
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Clarifying lecture concepts,61,67.0
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Preparing for the midterm(s),51,56.0
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Checking or debugging my homework solutions,40,44.0
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Just curious / playing with it,34,37.4
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Clarifying homework problems before attempting,31,34.1
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Preparing for the final exam,28,30.8
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Understanding solutions after grading,27,29.7
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Clarifying lab instructions or lab analysis,24,26.4
+Q7,What did you use the Virtual TA for?,multi-select,91,instrument,Preparing for quizzes,5,5.5
+Q8,Typical session length with the Virtual TA (average time per session),single-select,92,instrument,15-30 minutes,27,29.3
+Q8,Typical session length with the Virtual TA (average time per session),single-select,92,instrument,5-15 minutes,21,22.8
+Q8,Typical session length with the Virtual TA (average time per session),single-select,92,instrument,Less than 5 minutes,21,22.8
+Q8,Typical session length with the Virtual TA (average time per session),single-select,92,instrument,30-60 minutes,18,19.6
+Q8,Typical session length with the Virtual TA (average time per session),single-select,92,instrument,More than 60 minutes,5,5.4
+Q9,Learning & understanding,multi-select,92,instrument,Deeper concept understanding,56,60.9
+Q9,Learning & understanding,multi-select,92,instrument,Connected topics better,44,47.8
+Q9,Learning & understanding,multi-select,92,instrument,Gained subject confidence,43,46.7
+Q9,Learning & understanding,multi-select,92,instrument,No effect on learning,20,21.7
+Q10,Efficiency & workload,multi-select,92,instrument,Less time stuck,65,70.7
+Q10,Efficiency & workload,multi-select,92,instrument,More efficient studying,42,45.7
+Q10,Efficiency & workload,multi-select,92,instrument,Saved overall time,35,38.0
+Q10,Efficiency & workload,multi-select,92,instrument,Replaced other resources,25,27.2
+Q10,Efficiency & workload,multi-select,92,instrument,No efficiency benefit,17,18.5
+Q11,Study strategies,single-select,91,instrument,Used VTA after self-attempt,48,52.7
+Q11,Study strategies,single-select,91,instrument,Attempted harder problems,17,18.7
+Q11,Study strategies,single-select,91,instrument,Used VTA before self-attempt,13,14.3
+Q11,Study strategies,single-select,91,instrument,Accepted answers uncritically,7,7.7
+Q11,Study strategies,single-select,91,instrument,Led to procrastination,6,6.6
+Q12,Perceived learning outcomes,multi-select,90,instrument,Better on homework,49,54.4
+Q12,Perceived learning outcomes,multi-select,90,instrument,Learned concepts more solidly,38,42.2
+Q12,Perceived learning outcomes,multi-select,90,instrument,Grade would have been lower without it,27,30.0
+Q12,Perceived learning outcomes,multi-select,90,instrument,Better on quizzes and exams,24,26.7
+Q13,Depth vs. superficial understanding,single-select,92,instrument,"Encouraged me to ask ""why"", not just ""what""",34,37.0
+Q13,Depth vs. superficial understanding,single-select,92,instrument,Changed how I think about problem solving,23,25.0
+Q13,Depth vs. superficial understanding,single-select,92,instrument,Felt I understood more than I actually did,18,19.6
+Q13,Depth vs. superficial understanding,single-select,92,instrument,Worry it may weaken independent problem solving,17,18.5
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,92,instrument,Neither agree nor disagree,37,40.2
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,92,instrument,Agree,32,34.8
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,92,instrument,Disagree,16,17.4
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,92,instrument,Strongly agree,6,6.5
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,92,instrument,Strongly disagree,1,1.1
+Q15,Self-reported adherence,single-select,90,instrument,Always rule-compliant,43,47.8
+Q15,Self-reported adherence,single-select,90,instrument,Used to improve own work,40,44.4
+Q15,Self-reported adherence,single-select,90,instrument,Possibly not approved,7,7.8
+Q16,Would you like to have a Virtual TA (or something similar) in other technical courses?,single-select,93,instrument,Yes,49,52.7
+Q16,Would you like to have a Virtual TA (or something similar) in other technical courses?,single-select,93,instrument,Not sure / It depends on the design,37,39.8
+Q16,Would you like to have a Virtual TA (or something similar) in other technical courses?,single-select,93,instrument,No,7,7.5
+Q17,Would you recommend future students in this course make active use of the Virtual TA?,single-select,93,instrument,Yes,67,72.0
+Q17,Would you recommend future students in this course make active use of the Virtual TA?,single-select,93,instrument,Not sure / It depends on the design,22,23.7
+Q17,Would you recommend future students in this course make active use of the Virtual TA?,single-select,93,instrument,No,4,4.3

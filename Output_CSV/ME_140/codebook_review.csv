@@ -1,0 +1,87 @@
+Question,Question_text,Code,Assigned_label,Appears_in_data,Confidence,Evidence
+Q1,How would you rate your prior familiarity with AI tools before this course?,1,None (no prior familiarity),yes,unconfirmed,"Instrument item 1 is prior AI familiarity (None/Low/Moderate/High/Very high), but the Qualtrics stem reads 'Did you find this explanation useful?'. Response pattern supports the instrument: rho=+0.52 with pre-course AI use and +0.49 with semester AI use, but only +0.08 with Virtual TA use. Treated as familiarity; set Q1_IS_FAMILIARITY = False in codebook_me140.py to drop it."
+Q1,How would you rate your prior familiarity with AI tools before this course?,2,Low,yes,unconfirmed,"Instrument item 1 is prior AI familiarity (None/Low/Moderate/High/Very high), but the Qualtrics stem reads 'Did you find this explanation useful?'. Response pattern supports the instrument: rho=+0.52 with pre-course AI use and +0.49 with semester AI use, but only +0.08 with Virtual TA use. Treated as familiarity; set Q1_IS_FAMILIARITY = False in codebook_me140.py to drop it."
+Q1,How would you rate your prior familiarity with AI tools before this course?,3,Moderate,yes,unconfirmed,"Instrument item 1 is prior AI familiarity (None/Low/Moderate/High/Very high), but the Qualtrics stem reads 'Did you find this explanation useful?'. Response pattern supports the instrument: rho=+0.52 with pre-course AI use and +0.49 with semester AI use, but only +0.08 with Virtual TA use. Treated as familiarity; set Q1_IS_FAMILIARITY = False in codebook_me140.py to drop it."
+Q1,How would you rate your prior familiarity with AI tools before this course?,4,High,yes,unconfirmed,"Instrument item 1 is prior AI familiarity (None/Low/Moderate/High/Very high), but the Qualtrics stem reads 'Did you find this explanation useful?'. Response pattern supports the instrument: rho=+0.52 with pre-course AI use and +0.49 with semester AI use, but only +0.08 with Virtual TA use. Treated as familiarity; set Q1_IS_FAMILIARITY = False in codebook_me140.py to drop it."
+Q1,How would you rate your prior familiarity with AI tools before this course?,5,Very high,yes,unconfirmed,"Instrument item 1 is prior AI familiarity (None/Low/Moderate/High/Very high), but the Qualtrics stem reads 'Did you find this explanation useful?'. Response pattern supports the instrument: rho=+0.52 with pre-course AI use and +0.49 with semester AI use, but only +0.08 with Virtual TA use. Treated as familiarity; set Q1_IS_FAMILIARITY = False in codebook_me140.py to drop it."
+Q2,"Before this course, how often did you use AI tools for academic work?",1,Never,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q2,"Before this course, how often did you use AI tools for academic work?",2,A few times per semester,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q2,"Before this course, how often did you use AI tools for academic work?",3,A few times per month,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q2,"Before this course, how often did you use AI tools for academic work?",4,A few times per week,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q2,"Before this course, how often did you use AI tools for academic work?",5,Daily or almost daily,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",1,Never,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",2,A few times per semester,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",3,A few times per month,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",4,A few times per week,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q3,"This semester (overall, in all courses), how often did you use AI tools?",5,Daily or almost daily,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,1,Explaining difficult concepts,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,2,Checking my homework or solutions,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,3,Generating or troubleshooting code,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,4,Drafting written assignments,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,5,Brainstorming ideas,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,6,Creating study notes / summaries,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,7,Preparing for midterms/exams,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,8,Checking my understanding of class notes,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,9,Mainly for non-academic tasks,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q4,For what learning or coursework-related purposes do you typically use AI tools?,10,I generally do not use AI tools,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,1,Never,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf. The ME 140 instrument has no 'not aware of the Virtual TA' option; the earlier survey did.
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,2,1-2 times total,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf. The ME 140 instrument has no 'not aware of the Virtual TA' option; the earlier survey did.
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,3,A few times per month,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf. The ME 140 instrument has no 'not aware of the Virtual TA' option; the earlier survey did.
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,4,1-2 times per week,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf. The ME 140 instrument has no 'not aware of the Virtual TA' option; the earlier survey did.
+Q5,How often did you use the course chatbot (Virtual TA) this semester?,5,3+ times per week,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf. The ME 140 instrument has no 'not aware of the Virtual TA' option; the earlier survey did.
+Q6,When in the semester did you use it most?,1,Mostly at the beginning of the course,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q6,When in the semester did you use it most?,2,Mostly in the middle of the course,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q6,When in the semester did you use it most?,3,Mostly near exams / deadlines,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q6,When in the semester did you use it most?,4,Consistently throughout the semester,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q6,When in the semester did you use it most?,5,I only tried it once or twice,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,1,Clarifying lecture concepts,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,2,Clarifying homework problems before attempting,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,3,Checking or debugging my homework solutions,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,4,Understanding solutions after grading,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,5,Preparing for quizzes,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,6,Preparing for the midterm(s),yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,7,Preparing for the final exam,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,8,Clarifying lab instructions or lab analysis,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q7,What did you use the Virtual TA for?,9,Just curious / playing with it,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q8,Typical session length with the Virtual TA (average time per session),1,Less than 5 minutes,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q8,Typical session length with the Virtual TA (average time per session),2,5-15 minutes,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q8,Typical session length with the Virtual TA (average time per session),3,15-30 minutes,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q8,Typical session length with the Virtual TA (average time per session),4,30-60 minutes,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q8,Typical session length with the Virtual TA (average time per session),5,More than 60 minutes,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q9,Learning & understanding,1,Deeper concept understanding,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q9,Learning & understanding,2,Connected topics better,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q9,Learning & understanding,3,Gained subject confidence,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q9,Learning & understanding,4,No effect on learning,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q10,Efficiency & workload,1,More efficient studying,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q10,Efficiency & workload,2,Less time stuck,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q10,Efficiency & workload,3,Saved overall time,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q10,Efficiency & workload,4,Replaced other resources,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q10,Efficiency & workload,5,No efficiency benefit,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q11,Study strategies,1,Used VTA after self-attempt,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q11,Study strategies,2,Used VTA before self-attempt,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q11,Study strategies,3,Attempted harder problems,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q11,Study strategies,4,Led to procrastination,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q11,Study strategies,5,Accepted answers uncritically,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q12,Perceived learning outcomes,1,Better on homework,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q12,Perceived learning outcomes,2,Better on quizzes and exams,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q12,Perceived learning outcomes,3,Grade would have been lower without it,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q12,Perceived learning outcomes,4,Learned concepts more solidly,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q13,Depth vs. superficial understanding,1,Felt I understood more than I actually did,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q13,Depth vs. superficial understanding,2,"Encouraged me to ask ""why"", not just ""what""",yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q13,Depth vs. superficial understanding,3,Changed how I think about problem solving,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q13,Depth vs. superficial understanding,4,Worry it may weaken independent problem solving,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",1,Strongly disagree,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",2,Disagree,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",3,Neither agree nor disagree,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",4,Agree,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q14,"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",5,Strongly agree,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q15,Self-reported adherence,1,Always rule-compliant,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q15,Self-reported adherence,2,Possibly not approved,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q15,Self-reported adherence,3,Submitted AI output directly,no,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q15,Self-reported adherence,4,Used to improve own work,yes,instrument,Option order read from Appendix D of data/ME 140 questions.pdf.
+Q16,Would you like to have a Virtual TA (or something similar) in other technical courses?,1,Yes,yes,instrument,"Option order read from Appendix D of data/ME 140 questions.pdf. Three options only (Yes / No / Not sure), not four."
+Q16,Would you like to have a Virtual TA (or something similar) in other technical courses?,2,No,yes,instrument,"Option order read from Appendix D of data/ME 140 questions.pdf. Three options only (Yes / No / Not sure), not four."
+Q16,Would you like to have a Virtual TA (or something similar) in other technical courses?,3,Not sure / It depends on the design,yes,instrument,"Option order read from Appendix D of data/ME 140 questions.pdf. Three options only (Yes / No / Not sure), not four."
+Q17,Would you recommend future students in this course make active use of the Virtual TA?,1,Yes,yes,instrument,"Option order read from Appendix D of data/ME 140 questions.pdf. Three options only (Yes / No / Not sure), not four."
+Q17,Would you recommend future students in this course make active use of the Virtual TA?,2,No,yes,instrument,"Option order read from Appendix D of data/ME 140 questions.pdf. Three options only (Yes / No / Not sure), not four."
+Q17,Would you recommend future students in this course make active use of the Virtual TA?,3,Not sure / It depends on the design,yes,instrument,"Option order read from Appendix D of data/ME 140 questions.pdf. Three options only (Yes / No / Not sure), not four."

@@ -1,0 +1,5 @@
+Test,Statistic,Value,p_value
+Fisher exact: VTA use vs learning benefit,odds ratio,23.0,5.131394017137198e-06
+Mann-Whitney U: quality concern by deeper understanding,U,1075.0,0.572243106268558
+Mann-Whitney effect size,rank-biserial r,-0.0665,
+Kruskal-Wallis: VTA intensity by semester timing,H,38.999,6.969790932392098e-08

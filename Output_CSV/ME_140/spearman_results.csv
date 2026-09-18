@@ -1,0 +1,16 @@
+Variable_A,Variable_B,spearman_rho,p_value,n,significant
+VTA Intensity,Session Length,0.659,9.270847618028732e-13,92,True
+VTA Intensity,Prior AI Familiarity,0.0798,0.446816109539954,93,False
+VTA Intensity,Pre-course AI Use,0.1898,0.06838935166021626,93,False
+VTA Intensity,Semester AI Use,0.3688,0.0002751434640686214,93,True
+VTA Intensity,Quality Concern,0.0371,0.7256228117720329,92,False
+Session Length,Prior AI Familiarity,0.0094,0.9290917339428577,92,False
+Session Length,Pre-course AI Use,0.0812,0.4415737628717109,92,False
+Session Length,Semester AI Use,0.2844,0.006009793773605144,92,True
+Session Length,Quality Concern,0.0913,0.3866224315201229,92,False
+Prior AI Familiarity,Pre-course AI Use,0.5239,7.069901675469754e-08,93,True
+Prior AI Familiarity,Semester AI Use,0.4866,7.614266196898747e-07,93,True
+Prior AI Familiarity,Quality Concern,-0.152,0.14814674466799094,92,False
+Pre-course AI Use,Semester AI Use,0.5669,3.1537416566736006e-09,93,True
+Pre-course AI Use,Quality Concern,0.0037,0.9724065697496114,92,False
+Semester AI Use,Quality Concern,-0.0438,0.6787492599986328,92,False

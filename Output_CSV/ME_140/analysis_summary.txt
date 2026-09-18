@@ -1,0 +1,107 @@
+========================================================================
+  VTA Survey Statistical Analysis -- ME 140, December 2025
+========================================================================
+
+[1] Loading data...
+    Analysis sample: N = 93
+
+[2] Deriving binary variables for categorical tests...
+    vta_used_binary: Used VTA=79, Never / minimal=14
+    benefit_learning: Reported benefit=72, No benefit=20
+    benefit_efficiency: Efficiency benefit=75, No efficiency benefit=17
+    recommend_binary: Yes=67, Not an unqualified yes=26
+    ai_before_binary: Infrequent prior AI use=59, Frequent prior AI use=34
+    session_binary: Longer sessions (15+ min)=50, Shorter sessions (<15 min)=42
+    familiarity_binary: Low/moderate prior familiarity=69, High prior familiarity=24
+
+[3] Running Chi-Square tests + Cramer's V...
+    (Academic-level tests are omitted: the ME 140 instrument does not
+     ask academic level. The familiarity tests are restored from Q1.)
+    VTA Use vs Learning Benefit: chi2=23.45, p=0.0000, V=0.505, n=92  [low expected count]
+    VTA Use vs Efficiency Benefit: chi2=22.11, p=0.0000, V=0.490, n=92  [low expected count]
+    Prior AI Use vs VTA Use: chi2=0.95, p=0.3299, V=0.101, n=93
+    VTA Use vs Recommendation: chi2=1.05, p=0.3055, V=0.106, n=93  [low expected count]
+    Learning Benefit vs Recommendation: chi2=5.34, p=0.0209, V=0.241, n=92
+    Session Length vs Learning Benefit: chi2=22.61, p=0.0000, V=0.496, n=92
+    Familiarity vs VTA Use: chi2=0.35, p=0.5566, V=0.061, n=93  [low expected count]
+    Familiarity vs Learning Benefit: chi2=0.09, p=0.7704, V=0.030, n=92
+
+[4] Applying Benjamini-Hochberg FDR correction...
+    [1] VTA Use vs Learning Benefit: adj_p=0.0000  -> SIGNIFICANT
+    [2] VTA Use vs Efficiency Benefit: adj_p=0.0000  -> SIGNIFICANT
+    [3] Prior AI Use vs VTA Use: adj_p=0.4398  -> not significant
+    [4] VTA Use vs Recommendation: adj_p=0.4398  -> not significant
+    [5] Learning Benefit vs Recommendation: adj_p=0.0418  -> SIGNIFICANT
+    [6] Session Length vs Learning Benefit: adj_p=0.0000  -> SIGNIFICANT
+    [7] Familiarity vs VTA Use: adj_p=0.6361  -> not significant
+    [8] Familiarity vs Learning Benefit: adj_p=0.7704  -> not significant
+
+[5] Running Spearman rank correlations...
+    VTA Intensity vs Session Length: rho=+0.659, p=0.0000, n=92 *
+    VTA Intensity vs Prior AI Familiarity: rho=+0.080, p=0.4468, n=93 
+    VTA Intensity vs Pre-course AI Use: rho=+0.190, p=0.0684, n=93 
+    VTA Intensity vs Semester AI Use: rho=+0.369, p=0.0003, n=93 *
+    VTA Intensity vs Quality Concern: rho=+0.037, p=0.7256, n=92 
+    Session Length vs Prior AI Familiarity: rho=+0.009, p=0.9291, n=92 
+    Session Length vs Pre-course AI Use: rho=+0.081, p=0.4416, n=92 
+    Session Length vs Semester AI Use: rho=+0.284, p=0.0060, n=92 *
+    Session Length vs Quality Concern: rho=+0.091, p=0.3866, n=92 
+    Prior AI Familiarity vs Pre-course AI Use: rho=+0.524, p=0.0000, n=93 *
+    Prior AI Familiarity vs Semester AI Use: rho=+0.487, p=0.0000, n=93 *
+    Prior AI Familiarity vs Quality Concern: rho=-0.152, p=0.1481, n=92 
+    Pre-course AI Use vs Semester AI Use: rho=+0.567, p=0.0000, n=93 *
+    Pre-course AI Use vs Quality Concern: rho=+0.004, p=0.9724, n=92 
+    Semester AI Use vs Quality Concern: rho=-0.044, p=0.6787, n=92 
+
+[6] Running Fisher's exact test (VTA use vs learning benefit)...
+    Odds Ratio = 23.00, p = 0.0000
+    Contingency table:
+      benefit_learning  No benefit  Reported benefit
+      vta_used_binary                               
+      Never / minimal           10                 3
+      Used VTA                  10                69
+
+[7] Running Mann-Whitney U (quality concern by understanding group)...
+    U = 1075.0, p = 0.5722, n1=56, n2=36
+    Medians: 3.0 vs 3.0, rank-biserial r = -0.066
+
+[8] Running Kruskal-Wallis (VTA intensity by semester timing)...
+    (Substituted for 'by academic level', which ME 140 does not ask.)
+    H = 39.00, p = 0.0000
+    Group sizes: {'Mostly at the beginning of the course': 13, 'Mostly in the middle of the course': 21, 'Mostly near exams / deadlines': 29, 'Consistently throughout the semester': 16, 'I only tried it once or twice': 13}
+    Caveat: this result is partly definitional -- the Q6 option
+    'I only tried it once or twice' overlaps in meaning with the low
+    end of the Q5 usage-frequency scale being compared.
+    Post-hoc pairwise (BH FDR-corrected):
+      Mostly at the beginning of the course vs Mostly in the middle of the course: adj_p=0.1209 -> not significant
+      Mostly at the beginning of the course vs Mostly near exams / deadlines: adj_p=0.0094 -> SIGNIFICANT
+      Mostly at the beginning of the course vs Consistently throughout the semester: adj_p=0.0016 -> SIGNIFICANT
+      Mostly at the beginning of the course vs I only tried it once or twice: adj_p=0.0003 -> SIGNIFICANT
+      Mostly in the middle of the course vs Mostly near exams / deadlines: adj_p=0.5898 -> not significant
+      Mostly in the middle of the course vs Consistently throughout the semester: adj_p=0.0604 -> not significant
+      Mostly in the middle of the course vs I only tried it once or twice: adj_p=0.0001 -> SIGNIFICANT
+      Mostly near exams / deadlines vs Consistently throughout the semester: adj_p=0.0370 -> SIGNIFICANT
+      Mostly near exams / deadlines vs I only tried it once or twice: adj_p=0.0000 -> SIGNIFICANT
+      Consistently throughout the semester vs I only tried it once or twice: adj_p=0.0001 -> SIGNIFICANT
+
+[9] Generating figures...
+
+[10] Writing tables...
+
+========================================================================
+  LABEL PROVENANCE
+========================================================================
+  From instrument (ME 140 questions.pdf, Appendix D): Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17
+  Unconfirmed item identity: Q1
+    Q1's Qualtrics stem reads 'Did you find this explanation useful?',
+    but the instrument lists item 1 as prior AI familiarity and the
+    response pattern matches familiarity. Figures using it are stamped.
+    Currently treated as familiarity: True
+  See outputs/me140_dec2025/codebook_review.csv for every mapping.
+
+========================================================================
+  Analysis complete.  N = 93
+  Figures -> figures/me140_dec2025/
+  Tables  -> outputs/me140_dec2025/
+========================================================================
+
