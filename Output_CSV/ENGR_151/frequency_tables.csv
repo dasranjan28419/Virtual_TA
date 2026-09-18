@@ -1,0 +1,112 @@
+Question_text,Type,N_respondents,Category,Count,Percentage
+What is your current academic level?,single-select,97,Junior,51,52.6
+What is your current academic level?,single-select,97,Sophomore,23,23.7
+What is your current academic level?,single-select,97,Senior,23,23.7
+"How would you rate your prior familiarity with AI tools (ChatGPT, Gemini, Copilot, etc.) before this course?",single-select,96,Moderate,51,53.1
+"How would you rate your prior familiarity with AI tools (ChatGPT, Gemini, Copilot, etc.) before this course?",single-select,96,High,27,28.1
+"How would you rate your prior familiarity with AI tools (ChatGPT, Gemini, Copilot, etc.) before this course?",single-select,96,Very HIgh,9,9.4
+"How would you rate your prior familiarity with AI tools (ChatGPT, Gemini, Copilot, etc.) before this course?",single-select,96,Low,9,9.4
+"Before this course, how often did you use AI tools for academic work?",single-select,97,A few times per week,36,37.1
+"Before this course, how often did you use AI tools for academic work?",single-select,97,A few times per month,23,23.7
+"Before this course, how often did you use AI tools for academic work?",single-select,97,A few times per semester,23,23.7
+"Before this course, how often did you use AI tools for academic work?",single-select,97,Daily or almost daily,11,11.3
+"Before this course, how often did you use AI tools for academic work?",single-select,97,Never,4,4.1
+"This semester (overall, in all courses), how often did you use AI tools (any, including the Virtual TA)?",single-select,97,A few times per week,33,34.0
+"This semester (overall, in all courses), how often did you use AI tools (any, including the Virtual TA)?",single-select,97,A few times per month,28,28.9
+"This semester (overall, in all courses), how often did you use AI tools (any, including the Virtual TA)?",single-select,97,A few times per semester,25,25.8
+"This semester (overall, in all courses), how often did you use AI tools (any, including the Virtual TA)?",single-select,97,Daily or almost daily,8,8.2
+"This semester (overall, in all courses), how often did you use AI tools (any, including the Virtual TA)?",single-select,97,Never,3,3.1
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,Explaining difficult concepts,77,79.4
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,Preparing for midterms/exams,59,60.8
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,Checking my homework or solutions,56,57.7
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,Creating study notes / summaries,53,54.6
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,Brainstorming ideas,39,40.2
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,Checking my understanding of Class notes,32,33.0
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,Generating code or troubleshooting code,28,28.9
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,Drafting written assignments,11,11.3
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,I use Ai mainly for non-academic tasks,8,8.2
+For what learning or coursework-related purposes do you typically use AI tools? (Select all that apply.),multi-select,97,I generally do not use AI tools,4,4.1
+How often did you use the course chatbot (Virtual TA) this semester?,single-select,97,1-2 times total,35,36.1
+How often did you use the course chatbot (Virtual TA) this semester?,single-select,97,A few times per month,30,30.9
+How often did you use the course chatbot (Virtual TA) this semester?,single-select,97,Never,18,18.6
+How often did you use the course chatbot (Virtual TA) this semester?,single-select,97,1-2 times per week,10,10.3
+How often did you use the course chatbot (Virtual TA) this semester?,single-select,97,3+ times per week,3,3.1
+How often did you use the course chatbot (Virtual TA) this semester?,single-select,97,I was not aware of the course chatbot( Virtual TA),1,1.0
+When in the semester did you use it most?,single-select,97,Mostly near exams / deadlines,33,34.0
+When in the semester did you use it most?,single-select,97,I only tried it once or twice,27,27.8
+When in the semester did you use it most?,single-select,97,Mostly at the beginning of the course,17,17.5
+When in the semester did you use it most?,single-select,97,Mostly in the middle of the course,16,16.5
+When in the semester did you use it most?,single-select,97,Consistently throughout the semester,4,4.1
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Clarifying lecture concepts,57,58.8
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Preparing for midterms,39,40.2
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Just curious / playing with it.,36,37.1
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Preparing for final exam,32,33.0
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Preparing for quizes,27,27.8
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Clarifying homework problems before attempting them,24,24.7
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Clarifying Lab instructions or lab analysis,23,23.7
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Checking or debugging my homework solutions,19,19.6
+What did you use the Virtual TA for? (Select all that apply.),multi-select,97,Understanding solutions after homework was graded,14,14.4
+Typical session length with the Virtual TA (average time per session):,single-select,97,Less than 5 minutes,37,38.1
+Typical session length with the Virtual TA (average time per session):,single-select,97,5-15 minutes,30,30.9
+Typical session length with the Virtual TA (average time per session):,single-select,97,15-30 minutes,22,22.7
+Typical session length with the Virtual TA (average time per session):,single-select,97,30-60 minutes,6,6.2
+Typical session length with the Virtual TA (average time per session):,single-select,97,More than 60 minutes,2,2.1
+Learning & understanding (select all that apply).,multi-select,97,The Virtual TA helped me understand course concepts more deeply,46,47.4
+Learning & understanding (select all that apply).,multi-select,97,The Virtual TA didn't affect my learning,36,37.1
+Learning & understanding (select all that apply).,multi-select,97,The Virtual TA helped me make connections across topics,32,33.0
+Learning & understanding (select all that apply).,multi-select,97,Using the Virtual TA made me more confident in this subject,26,26.8
+Efficiency and workload (select all that apply),multi-select,97,The Virtual TA reduced the amount of time I felt stuck on problems.,45,46.4
+Efficiency and workload (select all that apply),multi-select,97,None of the Above,36,37.1
+Efficiency and workload (select all that apply),multi-select,97,The Virtual TA helped me complete my homework or studying more efficiently,35,36.1
+Efficiency and workload (select all that apply),multi-select,97,The Virtual TA saved me time overall in this course.,26,26.8
+Efficiency and workload (select all that apply),multi-select,97,"Because of the Virtual TA, I can spend less time using other resources (office hours, peers, internet, etc)",19,19.6
+Study Strategies,single-select,97,I used the Virtual TA mainly after trying problems on my own.,58,59.8
+Study Strategies,single-select,97,I used the Virtual TA mainly before trying problems on my own.,13,13.4
+Study Strategies,single-select,97,I sometimes accepted the Virtual TA's answers without critically evlaluating them.,12,12.4
+Study Strategies,single-select,97,Using Virtual TA encouraged me to attempt more challenging problems.,8,8.2
+Study Strategies,single-select,97,Using the Virtual TA made me more likely to postpone starting homework (procrastinate).,6,6.2
+Perceived learning outcome,single-select,97,"Even if my grade did not change, I feel I learned concepts more solidly because of the Virtual TA.",38,39.2
+Perceived learning outcome,single-select,97,The Virtual TA helped me perform better on quizzes and exams.,26,26.8
+Perceived learning outcome,single-select,97,The Virtual TA helped me perform better on homework.,22,22.7
+Perceived learning outcome,single-select,97,"Without the Virtual TA, I think my final grade would have been lower.",11,11.3
+Depth vs superficial understanding,single-select,97,I worry that relying on AI tools might weaken my ability to solve problems independently in the long term.,29,29.9
+Depth vs superficial understanding,single-select,97,"Using the Virtual TA changed how I think about problem solving (eg. more step-by-step reasoning, asking better questions).",24,24.7
+Depth vs superficial understanding,single-select,97,"The Virtual TA encouraged me to ask ""why"" and not just ""what is the answer"".",23,23.7
+Depth vs superficial understanding,single-select,97,Sometimes the Virtual TA's help made me feel like I understood more than I actually did.,21,21.6
+"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,97,Neutral,54,55.7
+"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,97,Agree,18,18.6
+"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,97,Disagree,15,15.5
+"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,97,Strongly agree,6,6.2
+"I sometimes encountered responses from the Virtual TA that were unclear, incomplete, or incorrect.",single-select,97,Strongly disagree,4,4.1
+Self-reported adherence.,single-select,97,I always used the Virtual TA in ways that I believe are consistent with the course rules.,52,53.6
+Self-reported adherence.,single-select,97,I have used AI mainly to check or improve work I already did myself.,31,32.0
+Self-reported adherence.,single-select,97,I sometimes used the Virtual TA (or other AI tools) in ways that I suspect the instructor might not approve of.,8,8.2
+Self-reported adherence.,single-select,97,I have used AI to generate solutions that I submitted with minimal modification.,6,6.2
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,I was not aware of the FAQ or did not use it.,39,40.2
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,The FAQ helped me understand the topic better.,30,30.9
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,The FAQ clarified common points of confusion related to the topic.,25,25.8
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,The FAQ was useful as a quick review or study resource.,22,22.7
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,The FAQ introduced questions or perspectives I had not previously considered.,18,18.6
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,"The FAQ helped me prepare for homework, labs, quizzes, or exams.",16,16.5
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,I reviewed the FAQ only briefly and did not use it much.,14,14.4
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,The FAQ included questions I wanted to ask but had not asked myself.,12,12.4
+"How did you use or perceive the FAQ materials provided during the course, which were generated from questions students asked to the VTA? (Select all that apply)",multi-select,97,Most of the FAQ content was too basic because I already understood those concepts.,4,4.1
+Would you like to have a Virtual TA (or something similar) in other technical courses?,single-select,97,Yes,53,54.6
+Would you like to have a Virtual TA (or something similar) in other technical courses?,single-select,97,Maybe,19,19.6
+Would you like to have a Virtual TA (or something similar) in other technical courses?,single-select,97,No,14,14.4
+Would you like to have a Virtual TA (or something similar) in other technical courses?,single-select,97,Not sure / It depends on the design,11,11.3
+Would you recommend future students in this course make active use of the Virtual TA?,single-select,97,Yes,57,58.8
+Would you recommend future students in this course make active use of the Virtual TA?,single-select,97,Maybe,18,18.6
+Would you recommend future students in this course make active use of the Virtual TA?,single-select,97,Not sure / It depends on the design,11,11.3
+Would you recommend future students in this course make active use of the Virtual TA?,single-select,97,No,11,11.3
+benefit_learning,single-select,97,No benefit,51,52.6
+benefit_learning,single-select,97,Reported benefit,46,47.4
+benefit_efficiency,single-select,97,Efficiency benefit,61,62.9
+benefit_efficiency,single-select,97,No efficiency benefit,36,37.1
+likert_score,single-select,97,3,54,55.7
+likert_score,single-select,97,4,18,18.6
+likert_score,single-select,97,2,15,15.5
+likert_score,single-select,97,5,6,6.2
+likert_score,single-select,97,1,4,4.1
+deeper_understanding,single-select,97,False,51,52.6
+deeper_understanding,single-select,97,True,46,47.4

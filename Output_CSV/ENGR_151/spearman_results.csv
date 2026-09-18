@@ -1,0 +1,6 @@
+Variable_A,Variable_B,spearman_rho,p_value,n,significant
+VTA Intensity,Session Length,0.7295,2.366915637218239e-17,97,True
+VTA Intensity,Prior Familiarity,0.0179,0.86261535159468,96,False
+VTA Intensity,Pre-course AI Use,-0.1375,0.1793561057900382,97,False
+Pre-course AI Use,Prior Familiarity,0.3749,0.0001674206031127,96,True
+Session Length,Prior Familiarity,0.1106,0.2835076510427172,96,False

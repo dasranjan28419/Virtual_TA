@@ -1,0 +1,67 @@
+
+============================================================
+  VTA Survey Statistical Analysis
+============================================================
+
+[1] Loading data...
+    Raw data:     97 rows, 25 columns
+    Cleaned data: 97 rows, 14 columns
+
+[2] Running Chi-Square tests + Cramér's V...
+    VTA Use vs Learning Benefit: χ²=11.13, p=0.0009, V=0.339
+    VTA Use vs Efficiency Benefit: χ²=30.62, p=0.0000, V=0.562
+    Academic Level vs VTA Use: χ²=0.26, p=0.8794, V=0.051
+    Familiarity vs VTA Use: χ²=1.90, p=0.5934, V=0.141
+    Academic Level vs Learning Benefit: χ²=3.86, p=0.1450, V=0.200
+    Familiarity vs Learning Benefit: χ²=5.54, p=0.1361, V=0.240
+
+[3] Applying Benjamini-Hochberg FDR correction...
+    [1] VTA Use vs Learning Benefit: adj_p=0.0026  → SIGNIFICANT
+    [2] VTA Use vs Efficiency Benefit: adj_p=0.0000  → SIGNIFICANT
+    [3] Academic Level vs VTA Use: adj_p=0.8794  → not significant
+    [4] Familiarity vs VTA Use: adj_p=0.7120  → not significant
+    [5] Academic Level vs Learning Benefit: adj_p=0.2174  → not significant
+    [6] Familiarity vs Learning Benefit: adj_p=0.2174  → not significant
+
+[4] Running Spearman rank correlations...
+    VTA Intensity vs Session Length: ρ=0.730, p=0.0000 *
+    VTA Intensity vs Prior Familiarity: ρ=0.018, p=0.8626 
+    VTA Intensity vs Pre-course AI Use: ρ=-0.137, p=0.1794 
+    Pre-course AI Use vs Prior Familiarity: ρ=0.375, p=0.0002 *
+    Session Length vs Prior Familiarity: ρ=0.111, p=0.2835 
+
+[5] Running Fisher's exact test (VTA use vs Learning benefit)...
+    Odds Ratio = 11.00, p = 0.0003
+
+[6] Running Mann-Whitney U (quality concern by understanding group)...
+    U = 1179.5, p = 0.9618
+
+[7] Running Kruskal-Wallis (VTA intensity by academic level)...
+    H = 2.12, p = 0.3473
+
+[8] Generating plots...
+  [saved] figures/engr 151 2026/fig01_vta_usage_frequency.png
+  [saved] figures/engr 151 2026/fig02_learning_understanding_benefits.png
+  [saved] figures/engr 151 2026/fig03_efficiency_benefits.png
+  [saved] figures/engr 151 2026/fig04_likert_quality_concern.png
+  [saved] figures/engr 151 2026/fig05_recommendation_vs_desire.png
+  [saved] figures/engr 151 2026/fig06_spearman_heatmap.png
+  [saved] figures/engr 151 2026/fig07_chi_square_summary.png
+  [saved] figures/engr 151 2026/fig08_vta_usage_by_level.png
+  [saved] figures/engr 151 2026/fig09_mann_whitney_quality_concern.png
+  [saved] figures/engr 151 2026/fig10_study_strategies.png
+  [saved] figures/engr 151 2026/fig11_adherence_pie.png
+
+[9] Writing result tables...
+    [saved] outputs/engr_151/frequency_tables.csv  (111 rows)
+    [saved] outputs/engr_151/analysis_sample_labeled.csv and analysis_sample_numeric.csv  (N=97)
+    [saved] outputs/engr_151/chi_square_results.csv  (6 tests)
+    [saved] outputs/engr_151/spearman_results.csv  (5 pairs)
+    [saved] outputs/engr_151/other_test_results.csv  (4 rows)
+
+============================================================
+  Analysis complete.  N = 97
+  Figures -> figures/engr 151 2026/
+  Tables  -> outputs/engr_151/
+============================================================
+
