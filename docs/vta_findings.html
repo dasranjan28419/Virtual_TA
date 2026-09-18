@@ -1,0 +1,748 @@
+<title>Virtual TA Survey Findings</title>
+<style>
+:root {
+  color-scheme: light;
+  --ground:      #F1F3F6;
+  --surface:     #FFFFFF;
+  --surface-2:   #F7F8FA;
+  --ink:         #161A20;
+  --ink-2:       #3D4654;
+  --ink-3:       #626C7B;
+  --rule:        #DCE0E7;
+  --rule-2:      #EAEDF1;
+  --engagement:  #1E6DB5;
+  --learning:    #8E3C86;
+  --benefit:     #C2661A;
+  --neutral-bar: #97A0AE;
+  --flag-bg:     #FBF3E6;
+  --flag-edge:   #C2661A;
+  --null-bg:     #F0F2F5;
+
+  --display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --body: "Avenir Next", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground:      #14171C;
+    --surface:     #1B1F26;
+    --surface-2:   #21262E;
+    --ink:         #E7EAEF;
+    --ink-2:       #BAC2CD;
+    --ink-3:       #8F99A7;
+    --rule:        #2E353F;
+    --rule-2:      #262C35;
+    --engagement:  #4C90D8;
+    --learning:    #B061A9;
+    --benefit:     #CE7A2C;
+    --neutral-bar: #6E7889;
+    --flag-bg:     #2A2318;
+    --flag-edge:   #CE7A2C;
+    --null-bg:     #232830;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground:      #14171C;
+  --surface:     #1B1F26;
+  --surface-2:   #21262E;
+  --ink:         #E7EAEF;
+  --ink-2:       #BAC2CD;
+  --ink-3:       #8F99A7;
+  --rule:        #2E353F;
+  --rule-2:      #262C35;
+  --engagement:  #4C90D8;
+  --learning:    #B061A9;
+  --benefit:     #CE7A2C;
+  --neutral-bar: #6E7889;
+  --flag-bg:     #2A2318;
+  --flag-edge:   #CE7A2C;
+  --null-bg:     #232830;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 20px 96px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 1000px; margin: 0 auto; }
+
+/* ── masthead ─────────────────────────────────────────── */
+.masthead {
+  padding: 72px 0 32px;
+  border-bottom: 2px solid var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.masthead h1 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.1rem, 5vw, 3.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  margin: 0;
+}
+.masthead .standfirst {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+  max-width: 64ch;
+  margin: 0;
+}
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0;
+}
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+.facts b { color: var(--ink-2); font-weight: 600; }
+
+/* ── sections ─────────────────────────────────────────── */
+section { padding-top: 56px; }
+
+.sec-head { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; }
+.sec-head .keyline { height: 3px; width: 56px; background: var(--ink-3); }
+.sec-head h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3.4vw, 2rem);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 6px 0 0;
+  text-wrap: balance;
+}
+.sec-head p.scope {
+  margin: 2px 0 0;
+  color: var(--ink-3);
+  font-size: 0.92rem;
+  max-width: 68ch;
+}
+section.t-engagement .keyline { background: var(--engagement); }
+section.t-learning   .keyline { background: var(--learning); }
+section.t-benefit    .keyline { background: var(--benefit); }
+section.t-engagement .sec-head .eyebrow { color: var(--engagement); }
+section.t-learning   .sec-head .eyebrow { color: var(--learning); }
+section.t-benefit    .sec-head .eyebrow { color: var(--benefit); }
+
+h3 {
+  font-family: var(--body);
+  font-size: 0.98rem;
+  font-weight: 650;
+  letter-spacing: 0.005em;
+  margin: 40px 0 4px;
+}
+h3 + p.note { margin-top: 0; }
+
+p { max-width: 70ch; }
+p.note { color: var(--ink-2); font-size: 0.94rem; }
+
+/* ── charts ───────────────────────────────────────────── */
+.chart {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 22px 24px 18px;
+  margin-top: 14px;
+}
+.chart > figcaption {
+  font-size: 0.9rem;
+  font-weight: 650;
+  margin-bottom: 2px;
+  text-wrap: balance;
+}
+.chart > .sub {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.bars { display: flex; flex-direction: column; gap: 11px; }
+.bar-row {
+  display: grid;
+  grid-template-columns: minmax(0, 20.5rem) 1fr 9.5rem;
+  align-items: center;
+  gap: 14px;
+}
+.bar-row .label { font-size: 0.86rem; color: var(--ink-2); line-height: 1.35; }
+.bar-row .track {
+  position: relative;
+  height: 14px;
+  background: var(--rule-2);
+  border-radius: 2px;
+}
+.bar-row .fill {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  border-radius: 0 3px 3px 0;
+  background: var(--neutral-bar);
+}
+.t-engagement .fill { background: var(--engagement); }
+.t-learning   .fill { background: var(--learning); }
+.t-benefit    .fill { background: var(--benefit); }
+.bar-row .fill.muted { background: var(--neutral-bar); }
+.bar-row .ci {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  transform: translateY(-1px);
+  background: var(--ink);
+  opacity: 0.62;
+}
+.bar-row .ci::before,
+.bar-row .ci::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 2px;
+  height: 8px;
+  background: var(--ink);
+}
+.bar-row .ci::before { left: 0; }
+.bar-row .ci::after  { right: 0; }
+.bar-row .val {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+.bar-row .val i { color: var(--ink-3); font-style: normal; }
+
+.axis {
+  display: grid;
+  grid-template-columns: minmax(0, 20.5rem) 1fr 9.5rem;
+  gap: 14px;
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule-2);
+}
+.axis .ticks {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--ink-3);
+}
+
+/* diverging likert */
+.diverge { display: flex; height: 26px; border-radius: 2px; overflow: hidden; gap: 2px; }
+.diverge span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--surface);
+  font-variant-numeric: tabular-nums;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-top: 12px;
+  font-size: 0.76rem;
+  color: var(--ink-2);
+}
+.legend i {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 2px;
+  margin-right: 6px;
+  vertical-align: -1px;
+}
+
+/* ── tables ───────────────────────────────────────────── */
+.table-scroll { overflow-x: auto; margin-top: 14px; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.83rem; }
+caption {
+  caption-side: top;
+  text-align: left;
+  padding: 16px 18px 10px;
+  font-size: 0.9rem;
+  font-weight: 650;
+  color: var(--ink);
+}
+th, td { padding: 8px 14px; text-align: left; border-bottom: 1px solid var(--rule-2); vertical-align: top; }
+thead th {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+tbody tr:last-child td { border-bottom: none; }
+td.num, th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.is-null td { background: var(--null-bg); }
+.verdict { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
+.verdict.sig { color: var(--benefit); font-weight: 600; }
+.verdict.ns  { color: var(--ink-3); }
+
+/* ── flags & callouts ─────────────────────────────────── */
+.flag {
+  background: var(--flag-bg);
+  border-left: 3px solid var(--flag-edge);
+  padding: 14px 18px;
+  margin-top: 18px;
+  border-radius: 0 3px 3px 0;
+}
+.flag p { margin: 0; font-size: 0.9rem; color: var(--ink-2); max-width: 74ch; }
+.flag p + p { margin-top: 8px; }
+.flag .tag {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--benefit);
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.readout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  margin-top: 16px;
+  overflow: hidden;
+}
+.readout div { background: var(--surface); padding: 14px 16px; }
+.readout dt {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 5px;
+}
+.readout dd {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.6rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.readout dd small { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-3); display: block; margin-top: 5px; line-height: 1.4; }
+
+ul.plain { padding-left: 1.1rem; max-width: 72ch; }
+ul.plain li { margin-bottom: 8px; font-size: 0.94rem; color: var(--ink-2); }
+ul.plain li b { color: var(--ink); font-weight: 650; }
+
+.two-read {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+.two-read > div {
+  border-top: 2px solid var(--rule);
+  padding-top: 10px;
+}
+.two-read h4 {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 6px;
+  font-weight: 500;
+}
+.two-read p { margin: 0; font-size: 0.88rem; color: var(--ink-2); max-width: none; }
+
+footer {
+  margin-top: 72px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  line-height: 1.7;
+}
+
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--engagement); outline-offset: 2px; }
+
+@media (max-width: 720px) {
+  .bar-row, .axis { grid-template-columns: 1fr; gap: 4px; }
+  .axis .ticks { grid-column: 1; }
+  .bar-row .val { text-align: left; }
+}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow">Statistical summary · all outputs · no selective reporting</p>
+  <h1>Did the Virtual TA make learning easier and more effective?</h1>
+  <p class="standfirst">Every descriptive and inferential result from the student survey, reported in full — including the null results, the internal contradictions in the data, and the findings that the study design cannot support.</p>
+  <div class="facts">
+    <span><b>n = 97</b> respondents</span>
+    <span><b>19</b> items analysed</span>
+    <span><b>13</b> hypothesis tests</span>
+    <span><b>α = .05</b>, Benjamini–Hochberg FDR</span>
+    <span>Single course, single semester</span>
+  </div>
+</header>
+
+<section>
+  <div class="sec-head">
+    <div class="keyline"></div>
+    <p class="eyebrow">Before reading the numbers</p>
+    <h2>What the denominator is, and why it changes the answer</h2>
+  </div>
+
+  <p class="note">All 97 respondents answered every outcome question, including the 19 who reported never using the Virtual TA (18 “Never”, 1 “was not aware of it”). A percentage taken over all 97 therefore blends people describing an experience with people who did not have one. This report gives both denominators wherever the distinction changes the reading, and marks which one is in use.</p>
+
+  <div class="readout">
+    <div><dt>Respondents</dt><dd>97<small>Complete responses; 1 missing value across all items (prior AI familiarity)</small></dd></div>
+    <div><dt>Used the VTA</dt><dd>78<small>80.4% · 95% CI 71.4–87.1</small></dd></div>
+    <div><dt>Never used it</dt><dd>19<small>19.6% · 95% CI 12.9–28.6</small></dd></div>
+    <div><dt>Used weekly or more</dt><dd>13<small>13.4% of all respondents · 16.7% of users</small></dd></div>
+  </div>
+
+  <div class="flag">
+    <span class="tag">Data-quality flags found in the source file</span>
+    <p><b>All 19 non-users still recorded a VTA purpose and a typical session length</b>, and 17 of them selected “The Virtual TA didn’t affect my learning”. Either the questionnaire did not branch past the usage question, or “Never” was interpreted loosely. Their answers to experience-based items cannot be taken at face value.</p>
+    <p><b>Four items are labelled “select all that apply” but hold exactly one response each</b> in all 97 rows — study strategies, perceived learning outcome, depth vs. superficial understanding, and self-reported adherence. They behave as forced single-choice items, so their percentages are competing shares of one pick, not independent endorsement rates. A student who agreed with three statements could register only one, which systematically depresses every option.</p>
+    <p><b>Two columns in the <span style="font-family:var(--mono)">cleaned_data</span> sheet — <span style="font-family:var(--mono)">clarity</span> and <span style="font-family:var(--mono)">understanding</span> — are entirely empty.</b> They were declared but never populated, so no analysis used them.</p>
+  </div>
+
+  <h3>Who answered</h3>
+  <p class="note">The sample skews toward one cohort: 52.6% Juniors, 23.7% Sophomores, 23.7% Seniors. Prior AI familiarity was concentrated in the middle — 52.6% “Moderate”, 27.8% “High”, 9.3% “Very high”, 9.3% “Low”. Before the course, 48.5% already used AI tools weekly or daily and only 4.1% had never used them. The response rate is not recorded in the data, so non-response bias cannot be estimated.</p>
+</section>
+
+<!-- ══════════ ENGAGEMENT ══════════ -->
+<section class="t-engagement">
+  <div class="sec-head">
+    <div class="keyline"></div>
+    <p class="eyebrow">Theme 1</p>
+    <h2>Student engagement</h2>
+    <p class="scope">How much the Virtual TA was actually used: frequency, duration, timing, purpose, and how it fitted into study routines.</p>
+  </div>
+
+  <figure class="chart">
+    <figcaption>Frequency of Virtual TA use over the semester</figcaption>
+    <div class="sub">share of all respondents · n = 97 · whiskers = 95% Wilson CI</div>
+    <div class="bars">
+      <div class="bar-row"><span class="label">1–2 times total</span><span class="track"><span class="fill" style="width:36.1%"></span><span class="ci" style="left:27.2%;width:18.8%"></span></span><span class="val">36.1% <i>· 35/97</i></span></div>
+      <div class="bar-row"><span class="label">A few times per month</span><span class="track"><span class="fill" style="width:30.9%"></span><span class="ci" style="left:22.6%;width:18.1%"></span></span><span class="val">30.9% <i>· 30/97</i></span></div>
+      <div class="bar-row"><span class="label">Never</span><span class="track"><span class="fill muted" style="width:18.6%"></span><span class="ci" style="left:12.1%;width:15.3%"></span></span><span class="val">18.6% <i>· 18/97</i></span></div>
+      <div class="bar-row"><span class="label">1–2 times per week</span><span class="track"><span class="fill" style="width:10.3%"></span><span class="ci" style="left:5.7%;width:12.2%"></span></span><span class="val">10.3% <i>· 10/97</i></span></div>
+      <div class="bar-row"><span class="label">3+ times per week</span><span class="track"><span class="fill" style="width:3.1%"></span><span class="ci" style="left:1.1%;width:7.6%"></span></span><span class="val">3.1% <i>· 3/97</i></span></div>
+      <div class="bar-row"><span class="label">Was not aware of it</span><span class="track"><span class="fill muted" style="width:1.0%"></span><span class="ci" style="left:0.2%;width:5.4%"></span></span><span class="val">1.0% <i>· 1/97</i></span></div>
+    </div>
+    <div class="axis"><span class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></span></div>
+  </figure>
+
+  <p class="note">Reach was broad but shallow. Four in five students opened the Virtual TA at least once, yet the single most common pattern was <b>using it once or twice in the entire semester</b> (36.1%). Only 13 students (13.4%) used it weekly or more often.</p>
+
+  <figure class="chart">
+    <figcaption>Typical session length</figcaption>
+    <div class="sub">share of all respondents · n = 97 · median band = 5–15 minutes</div>
+    <div class="bars">
+      <div class="bar-row"><span class="label">Less than 5 minutes</span><span class="track"><span class="fill" style="width:38.1%"></span><span class="ci" style="left:29.1%;width:19.0%"></span></span><span class="val">38.1% <i>· 37/97</i></span></div>
+      <div class="bar-row"><span class="label">5–15 minutes</span><span class="track"><span class="fill" style="width:30.9%"></span><span class="ci" style="left:22.6%;width:18.1%"></span></span><span class="val">30.9% <i>· 30/97</i></span></div>
+      <div class="bar-row"><span class="label">15–30 minutes</span><span class="track"><span class="fill" style="width:22.7%"></span><span class="ci" style="left:15.5%;width:16.5%"></span></span><span class="val">22.7% <i>· 22/97</i></span></div>
+      <div class="bar-row"><span class="label">30–60 minutes</span><span class="track"><span class="fill" style="width:6.2%"></span><span class="ci" style="left:2.9%;width:9.9%"></span></span><span class="val">6.2% <i>· 6/97</i></span></div>
+      <div class="bar-row"><span class="label">More than 60 minutes</span><span class="track"><span class="fill" style="width:2.1%"></span><span class="ci" style="left:0.6%;width:6.6%"></span></span><span class="val">2.1% <i>· 2/97</i></span></div>
+    </div>
+    <div class="axis"><span class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></span></div>
+  </figure>
+
+  <h3>When it was used</h3>
+  <p class="note">Use clustered around assessment rather than continuous study: 34.0% used it mostly near exams or deadlines, 27.8% only tried it once or twice, 17.5% mostly at the start of the course, 16.5% mostly mid-semester, and <b>4.1% used it consistently throughout the semester</b>.</p>
+
+  <figure class="chart">
+    <figcaption>What the Virtual TA was used for</figcaption>
+    <div class="sub">select all that apply · bars = share of the 78 students who used it · counts over all 97 shown at right</div>
+    <div class="bars">
+      <div class="bar-row"><span class="label">Clarifying lecture concepts</span><span class="track"><span class="fill" style="width:65.4%"></span></span><span class="val">65.4% <i>· 57/97 all</i></span></div>
+      <div class="bar-row"><span class="label">Preparing for midterms</span><span class="track"><span class="fill" style="width:46.2%"></span></span><span class="val">46.2% <i>· 39/97 all</i></span></div>
+      <div class="bar-row"><span class="label">Preparing for the final exam</span><span class="track"><span class="fill" style="width:37.2%"></span></span><span class="val">37.2% <i>· 32/97 all</i></span></div>
+      <div class="bar-row"><span class="label">Preparing for quizzes</span><span class="track"><span class="fill" style="width:33.3%"></span></span><span class="val">33.3% <i>· 27/97 all</i></span></div>
+      <div class="bar-row"><span class="label">Just curious / playing with it</span><span class="track"><span class="fill muted" style="width:30.8%"></span></span><span class="val">30.8% <i>· 36/97 all</i></span></div>
+      <div class="bar-row"><span class="label">Clarifying homework before attempting it</span><span class="track"><span class="fill" style="width:30.8%"></span></span><span class="val">30.8% <i>· 24/97 all</i></span></div>
+      <div class="bar-row"><span class="label">Clarifying lab instructions or lab analysis</span><span class="track"><span class="fill" style="width:28.2%"></span></span><span class="val">28.2% <i>· 23/97 all</i></span></div>
+      <div class="bar-row"><span class="label">Checking or debugging homework solutions</span><span class="track"><span class="fill" style="width:23.1%"></span></span><span class="val">23.1% <i>· 19/97 all</i></span></div>
+      <div class="bar-row"><span class="label">Understanding solutions after grading</span><span class="track"><span class="fill" style="width:17.9%"></span></span><span class="val">17.9% <i>· 14/97 all</i></span></div>
+    </div>
+    <div class="axis"><span class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></span></div>
+  </figure>
+
+  <p class="note">Concept clarification led, but <b>“just curious / playing with it” was selected by 36 of 97 students</b> — the third most-cited purpose overall. Exploratory use is a substantial share of the recorded engagement, which is consistent with the large group who used the tool only once or twice.</p>
+
+  <h3>How it fitted into study routines</h3>
+  <p class="note">Forced single choice, n = 97. Most students placed the tool after their own effort: 59.8% used it mainly <i>after</i> trying problems themselves; 13.4% used it mainly <i>before</i> attempting them. On the risk side, 12.4% said they sometimes accepted its answers without critically evaluating them and 6.2% said it made them more likely to procrastinate; 8.2% said it encouraged them to attempt more challenging problems.</p>
+
+  <h3>The VTA-generated FAQ</h3>
+  <p class="note">The FAQ built from student questions reached less than the chatbot itself: <b>40.2% were unaware of it or did not use it</b>. Among those who engaged, 30.9% of all respondents said it helped them understand the topic better, 25.8% that it clarified common confusions, 22.7% that it was a useful quick review, 18.6% that it raised perspectives they had not considered, and 16.5% that it helped them prepare for assessments. 14.4% reviewed it only briefly, and 4.1% found it too basic.</p>
+
+  <div class="table-scroll">
+    <table>
+      <caption>What predicted engagement — and what did not</caption>
+      <thead><tr><th>Test</th><th>Comparison</th><th class="num">Statistic</th><th class="num">p</th><th class="num">Effect size</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>T1</td><td>Use intensity × session length (Spearman)</td><td class="num">ρ = 0.730</td><td class="num">&lt; .0001</td><td class="num">large</td><td class="verdict sig">Associated</td></tr>
+        <tr class="is-null"><td>T2</td><td>Use intensity × prior AI familiarity (Spearman)</td><td class="num">ρ = 0.018</td><td class="num">.863</td><td class="num">≈ 0</td><td class="verdict ns">No association</td></tr>
+        <tr class="is-null"><td>T3</td><td>Use intensity × pre-course AI use (Spearman)</td><td class="num">ρ = −0.137</td><td class="num">.179</td><td class="num">negligible</td><td class="verdict ns">No association</td></tr>
+        <tr><td>T4</td><td>Pre-course AI use × prior AI familiarity (Spearman)</td><td class="num">ρ = 0.375</td><td class="num">.0002</td><td class="num">moderate</td><td class="verdict sig">Associated</td></tr>
+        <tr class="is-null"><td>T5</td><td>Session length × prior AI familiarity (Spearman)</td><td class="num">ρ = 0.111</td><td class="num">.284</td><td class="num">negligible</td><td class="verdict ns">No association</td></tr>
+        <tr class="is-null"><td>T6</td><td>Use intensity across academic level (Kruskal–Wallis)</td><td class="num">H = 2.115, df 2</td><td class="num">.347</td><td class="num">ε² = 0.012</td><td class="verdict ns">No difference</td></tr>
+        <tr class="is-null"><td>T7</td><td>Academic level × used vs. never (χ²)</td><td class="num">χ² = 0.26, df 2</td><td class="num">.879</td><td class="num">V = 0.051</td><td class="verdict ns">Independent</td></tr>
+        <tr class="is-null"><td>T8</td><td>Prior familiarity × used vs. never (χ²)</td><td class="num">χ² = 1.90, df 3</td><td class="num">.593</td><td class="num">V = 0.141</td><td class="verdict ns">Independent</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="two-read">
+    <div>
+      <h4>What this shows</h4>
+      <p>Engagement was not explained by seniority or by prior experience with AI tools. Sophomores, Juniors and Seniors used the Virtual TA at statistically indistinguishable rates (median intensity 1.0, 1.0 and 2.0 respectively), and students who arrived already fluent with AI tools did not use it more. T4 is a consistency check on the instrument, not a finding: two questions about pre-course AI habits agree with each other, as they should.</p>
+    </div>
+    <div>
+      <h4>What this does not show</h4>
+      <p>T1 is close to definitional — frequency and session length are two measurements of the same underlying exposure, so a strong correlation is expected and carries little information. And seven null results at n = 97 are not evidence of no effect: with three level groups of 23, 51 and 23, only a large difference would have been detectable. These are inconclusive, not negative.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ LEARNING ══════════ -->
+<section class="t-learning">
+  <div class="sec-head">
+    <div class="keyline"></div>
+    <p class="eyebrow">Theme 2</p>
+    <h2>Student learning</h2>
+    <p class="scope">Reported effects on understanding, reasoning and depth — separated from effects on speed and workload, which appear under the next theme.</p>
+  </div>
+
+  <figure class="chart">
+    <figcaption>Reported effects on learning and understanding</figcaption>
+    <div class="sub">select all that apply · bars = share of the 78 students who used the VTA · all-respondent figures at right</div>
+    <div class="bars">
+      <div class="bar-row"><span class="label">Helped me understand course concepts more deeply</span><span class="track"><span class="fill" style="width:56.4%"></span></span><span class="val">56.4% <i>· 47.4% of 97</i></span></div>
+      <div class="bar-row"><span class="label">Helped me make connections across topics</span><span class="track"><span class="fill" style="width:41.0%"></span></span><span class="val">41.0% <i>· 33.0% of 97</i></span></div>
+      <div class="bar-row"><span class="label">Made me more confident in this subject</span><span class="track"><span class="fill" style="width:33.3%"></span></span><span class="val">33.3% <i>· 26.8% of 97</i></span></div>
+      <div class="bar-row"><span class="label">Didn’t affect my learning</span><span class="track"><span class="fill muted" style="width:24.4%"></span></span><span class="val">24.4% <i>· 37.1% of 97</i></span></div>
+    </div>
+    <div class="axis"><span class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></span></div>
+  </figure>
+
+  <p class="note">This is the item where the denominator matters most. Across all 97 respondents, “didn’t affect my learning” (37.1%) nearly matches “understood concepts more deeply” (47.4%). Restricted to the 78 who used the tool, the null response falls to 24.4% while the deeper-understanding response rises to 56.4% — because 17 of the 19 non-users selected the null option. <b>Neither figure is more correct than the other; they answer different questions.</b></p>
+
+  <figure class="chart">
+    <figcaption>Depth versus superficial understanding</figcaption>
+    <div class="sub">forced single choice · n = 97 · one statement per respondent, so shares compete</div>
+    <div class="bars">
+      <div class="bar-row"><span class="label">I worry that relying on AI tools might weaken my ability to solve problems independently</span><span class="track"><span class="fill muted" style="width:29.9%"></span><span class="ci" style="left:21.7%;width:17.9%"></span></span><span class="val">29.9% <i>· 29/97</i></span></div>
+      <div class="bar-row"><span class="label">It changed how I think about problem solving (more step-by-step reasoning, better questions)</span><span class="track"><span class="fill" style="width:24.7%"></span><span class="ci" style="left:17.2%;width:17.0%"></span></span><span class="val">24.7% <i>· 24/97</i></span></div>
+      <div class="bar-row"><span class="label">It encouraged me to ask “why”, not just “what is the answer”</span><span class="track"><span class="fill" style="width:23.7%"></span><span class="ci" style="left:16.4%;width:16.7%"></span></span><span class="val">23.7% <i>· 23/97</i></span></div>
+      <div class="bar-row"><span class="label">Sometimes its help made me feel I understood more than I actually did</span><span class="track"><span class="fill muted" style="width:21.6%"></span><span class="ci" style="left:14.6%;width:16.2%"></span></span><span class="val">21.6% <i>· 21/97</i></span></div>
+    </div>
+    <div class="axis"><span class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></span></div>
+  </figure>
+
+  <p class="note">Forced to pick one statement, the cohort split almost exactly in half: <b>48.5% chose a statement describing improved reasoning</b> (47 students) and <b>51.5% chose one describing a risk to their own understanding</b> (50 students). The single most-selected statement of the four is the concern about long-term dependence.</p>
+
+  <p class="note">Among the 78 users the balance shifts positive — 30.8% “changed how I think”, 28.2% “ask why”, 24.4% “worry about dependence”, 16.7% “felt I understood more than I did”. Among the 19 non-users it is almost entirely negative (52.6% worry, 42.1% false confidence), though what a non-user’s answer to this item means is unclear.</p>
+
+  <figure class="chart">
+    <figcaption>“I sometimes encountered responses that were unclear, incomplete, or incorrect”</figcaption>
+    <div class="sub">n = 97 · median 3.0 · mean 3.07 (SD 0.87) on a 1–5 scale</div>
+    <div class="diverge">
+      <span style="width:4.1%;background:var(--engagement)" title="Strongly disagree"></span>
+      <span style="width:15.5%;background:color-mix(in srgb, var(--engagement) 62%, var(--surface))">15.5%</span>
+      <span style="width:55.7%;background:var(--neutral-bar)">55.7%</span>
+      <span style="width:18.6%;background:color-mix(in srgb, var(--benefit) 68%, var(--surface))">18.6%</span>
+      <span style="width:6.2%;background:var(--benefit)">6.2%</span>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--engagement)"></i>Strongly disagree · 4.1% (4)</span>
+      <span><i style="background:color-mix(in srgb, var(--engagement) 62%, var(--surface))"></i>Disagree · 15.5% (15)</span>
+      <span><i style="background:var(--neutral-bar)"></i>Neutral · 55.7% (54)</span>
+      <span><i style="background:color-mix(in srgb, var(--benefit) 68%, var(--surface))"></i>Agree · 18.6% (18)</span>
+      <span><i style="background:var(--benefit)"></i>Strongly agree · 6.2% (6)</span>
+    </div>
+  </figure>
+
+  <p class="note">24.7% reported encountering flawed responses and 19.6% did not, but <b>55.7% sat on “Neutral”</b> — a majority declining to take a position. This is the survey’s only Likert item, so it supports no scale reliability estimate (Cronbach’s α needs multiple items), and a single item with this much central clustering is weak evidence in either direction.</p>
+
+  <h3>Self-reported adherence to course rules</h3>
+  <p class="note">Forced single choice, n = 97. 53.6% said they always used the tool in ways consistent with course rules and 32.0% that they used AI mainly to check work they had already done. <b>8.2% acknowledged using it in ways they suspected the instructor might not approve of, and 6.2% said they submitted AI-generated solutions with minimal modification</b> (9.0% and 7.7% respectively among users). These are self-reports on a sensitive question and should be read as a lower bound.</p>
+
+  <div class="table-scroll">
+    <table>
+      <caption>Learning-related tests</caption>
+      <thead><tr><th>Test</th><th>Comparison</th><th class="num">Statistic</th><th class="num">p</th><th class="num">Effect size</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr class="is-null"><td>T9</td><td>Quality-concern rating by whether deeper understanding was reported (Mann–Whitney U)</td><td class="num">U = 1179.5</td><td class="num">.962</td><td class="num">r = −0.006</td><td class="verdict ns">No difference</td></tr>
+        <tr class="is-null"><td>T10</td><td>Academic level × reported learning benefit (χ²)</td><td class="num">χ² = 3.86, df 2</td><td class="num">.145 <i>(adj .217)</i></td><td class="num">V = 0.200</td><td class="verdict ns">Independent</td></tr>
+        <tr class="is-null"><td>T11</td><td>Prior familiarity × reported learning benefit (χ²)</td><td class="num">χ² = 5.54, df 3</td><td class="num">.136 <i>(adj .217)</i></td><td class="num">V = 0.240</td><td class="verdict ns">Independent</td></tr>
+        <tr class="is-null"><td>T12</td><td>Use intensity × deeper understanding, users only (Spearman, n = 78)</td><td class="num">ρ = −0.001</td><td class="num">.996</td><td class="num">≈ 0</td><td class="verdict ns">No dose–response</td></tr>
+        <tr><td>T13</td><td>Use intensity × increased confidence, users only (Spearman, n = 78)</td><td class="num">ρ = 0.261</td><td class="num">.021</td><td class="num">small</td><td class="verdict sig">Associated</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="two-read">
+    <div>
+      <h4>What this shows</h4>
+      <p>T9 is a clean null: students who reported understanding concepts more deeply gave <i>identical</i> ratings on the accuracy concern (both medians 3.0; means 3.04 vs. 3.10). Perceiving a learning benefit and noticing flawed answers are unrelated in this sample. T12 is the more consequential null — <b>among users, heavier use had no relationship whatever with reporting deeper understanding</b> (ρ = −0.001). Confidence did rise modestly with use (T13).</p>
+    </div>
+    <div>
+      <h4>What this does not show</h4>
+      <p>Every learning outcome here is self-perceived. No grade, test score, or other objective measure appears anywhere in the dataset, so nothing in this section can speak to whether learning actually improved — only to what students believed. T12 and T13 are correlational and cross-sectional; a student who felt more confident may simply have kept using the tool.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BENEFIT ══════════ -->
+<section class="t-benefit">
+  <div class="sec-head">
+    <div class="keyline"></div>
+    <p class="eyebrow">Theme 3</p>
+    <h2>Learning benefit</h2>
+    <p class="scope">Efficiency, workload, perceived outcomes, and whether students would want the tool again — the practical payoff as students assessed it.</p>
+  </div>
+
+  <figure class="chart">
+    <figcaption>Reported effects on efficiency and workload</figcaption>
+    <div class="sub">select all that apply · bars = share of the 78 students who used the VTA · all-respondent figures at right</div>
+    <div class="bars">
+      <div class="bar-row"><span class="label">Reduced the time I felt stuck on problems</span><span class="track"><span class="fill" style="width:56.4%"></span></span><span class="val">56.4% <i>· 46.4% of 97</i></span></div>
+      <div class="bar-row"><span class="label">Helped me complete homework or studying more efficiently</span><span class="track"><span class="fill" style="width:43.6%"></span></span><span class="val">43.6% <i>· 36.1% of 97</i></span></div>
+      <div class="bar-row"><span class="label">Saved me time overall in this course</span><span class="track"><span class="fill" style="width:33.3%"></span></span><span class="val">33.3% <i>· 26.8% of 97</i></span></div>
+      <div class="bar-row"><span class="label">Let me spend less time on other resources (office hours, peers, internet)</span><span class="track"><span class="fill" style="width:23.1%"></span></span><span class="val">23.1% <i>· 19.6% of 97</i></span></div>
+      <div class="bar-row"><span class="label">None of the above</span><span class="track"><span class="fill muted" style="width:23.1%"></span></span><span class="val">23.1% <i>· 37.1% of 97</i></span></div>
+    </div>
+    <div class="axis"><span class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></span></div>
+  </figure>
+
+  <p class="note">Efficiency is where the tool registered most strongly: 60 of 78 users (76.9%) selected at least one efficiency benefit. The most-cited effect — reducing time stuck — is also the narrowest claim in the list. Only 23.1% of users reported substituting the Virtual TA for office hours, peers or other resources, so displacement of existing support was limited in this cohort.</p>
+
+  <figure class="chart">
+    <figcaption>Perceived learning outcome</figcaption>
+    <div class="sub">forced single choice · n = 97 · one statement per respondent, so shares compete</div>
+    <div class="bars">
+      <div class="bar-row"><span class="label">Even if my grade did not change, I feel I learned concepts more solidly</span><span class="track"><span class="fill" style="width:39.2%"></span><span class="ci" style="left:30.1%;width:19.0%"></span></span><span class="val">39.2% <i>· 38/97</i></span></div>
+      <div class="bar-row"><span class="label">Helped me perform better on quizzes and exams</span><span class="track"><span class="fill" style="width:26.8%"></span><span class="ci" style="left:19.0%;width:17.4%"></span></span><span class="val">26.8% <i>· 26/97</i></span></div>
+      <div class="bar-row"><span class="label">Helped me perform better on homework</span><span class="track"><span class="fill" style="width:22.7%"></span><span class="ci" style="left:15.5%;width:16.5%"></span></span><span class="val">22.7% <i>· 22/97</i></span></div>
+      <div class="bar-row"><span class="label">Without it, my final grade would have been lower</span><span class="track"><span class="fill" style="width:11.3%"></span><span class="ci" style="left:6.5%;width:12.7%"></span></span><span class="val">11.3% <i>· 11/97</i></span></div>
+    </div>
+    <div class="axis"><span class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></span></div>
+  </figure>
+
+  <p class="note">The most-chosen outcome statement explicitly decouples learning from grades. <b>Only 11.3% attributed a grade effect to the Virtual TA</b> — the lowest share of the four options, and the only one making a causal claim about performance.</p>
+
+  <figure class="chart">
+    <figcaption>Would you recommend future students use the Virtual TA?</figcaption>
+    <div class="sub">users (n = 78) versus non-users (n = 19) · whiskers = 95% Wilson CI</div>
+    <div class="bars">
+      <div class="bar-row"><span class="label">Yes — users</span><span class="track"><span class="fill" style="width:66.7%"></span><span class="ci" style="left:55.6%;width:20.5%"></span></span><span class="val">66.7% <i>· 52/78</i></span></div>
+      <div class="bar-row"><span class="label">Yes — non-users</span><span class="track"><span class="fill muted" style="width:26.3%"></span><span class="ci" style="left:11.8%;width:37.0%"></span></span><span class="val">26.3% <i>· 5/19</i></span></div>
+      <div class="bar-row"><span class="label">Maybe / not sure — users</span><span class="track"><span class="fill" style="width:23.1%"></span><span class="ci" style="left:15.1%;width:18.5%"></span></span><span class="val">23.1% <i>· 18/78</i></span></div>
+      <div class="bar-row"><span class="label">Maybe / not sure — non-users</span><span class="track"><span class="fill muted" style="width:57.9%"></span><span class="ci" style="left:36.3%;width:40.6%"></span></span><span class="val">57.9% <i>· 11/19</i></span></div>
+      <div class="bar-row"><span class="label">No — users</span><span class="track"><span class="fill" style="width:10.3%"></span><span class="ci" style="left:5.3%;width:13.7%"></span></span><span class="val">10.3% <i>· 8/78</i></span></div>
+      <div class="bar-row"><span class="label">No — non-users</span><span class="track"><span class="fill muted" style="width:15.8%"></span><span class="ci" style="left:5.5%;width:32.1%"></span></span><span class="val">15.8% <i>· 3/19</i></span></div>
+    </div>
+    <div class="axis"><span class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></span></div>
+  </figure>
+
+  <p class="note">Across all 97 respondents, 58.8% would recommend the Virtual TA and 11.3% would not; 54.6% would like one in other technical courses and 14.4% would not. The non-user confidence intervals are wide enough (n = 19) to overlap the user estimates, so the apparent gap between the two groups is suggestive rather than established.</p>
+
+  <div class="table-scroll">
+    <table>
+      <caption>Benefit-related tests, with Benjamini–Hochberg correction across the six pre-specified χ² tests</caption>
+      <thead><tr><th>Test</th><th>Comparison</th><th class="num">Statistic</th><th class="num">p (adj)</th><th class="num">Effect size</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>T14</td><td>Used vs. never × reported learning benefit (χ²)</td><td class="num">χ² = 11.13, df 1</td><td class="num">.0009 (.0026)</td><td class="num">V = 0.339</td><td class="verdict sig">Associated</td></tr>
+        <tr><td>T15</td><td>Same comparison, Fisher’s exact</td><td class="num">OR = 11.0</td><td class="num">.00027</td><td class="num">large</td><td class="verdict sig">Associated</td></tr>
+        <tr><td>T16</td><td>Used vs. never × reported efficiency benefit (χ²)</td><td class="num">χ² = 30.62, df 1</td><td class="num">&lt; .0001 (&lt; .0001)</td><td class="num">V = 0.562</td><td class="verdict sig">Associated</td></tr>
+        <tr><td>T17</td><td>Use intensity × any efficiency benefit, users only (Spearman, n = 78)</td><td class="num">ρ = 0.318</td><td class="num">.005</td><td class="num">moderate</td><td class="verdict sig">Dose–response</td></tr>
+        <tr><td>T18</td><td>Use intensity × would recommend (Spearman, n = 97)</td><td class="num">ρ = 0.327</td><td class="num">.001</td><td class="num">moderate</td><td class="verdict sig">Associated</td></tr>
+        <tr><td>T19</td><td>Use intensity × wants a VTA in other courses (Spearman, n = 97)</td><td class="num">ρ = 0.415</td><td class="num">&lt; .0001</td><td class="num">moderate</td><td class="verdict sig">Associated</td></tr>
+        <tr class="is-null"><td>T20</td><td>Use intensity × quality concern (Spearman, n = 97)</td><td class="num">ρ = 0.141</td><td class="num">.168</td><td class="num">negligible</td><td class="verdict ns">No association</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flag">
+    <span class="tag">The largest effects in this study are partly structural</span>
+    <p>T14–T16 compare students who used the Virtual TA against students who did not, on whether they reported a benefit from it. <b>A student who never used the tool has no basis on which to report a benefit, and the comparison categories are defined by the absence of a selection</b> — “No benefit” simply means the benefit option was not ticked. The contingency table makes this visible: 18 of 19 non-users selected “none of the above” for efficiency, against 18 of 78 users.</p>
+    <p>These tests therefore largely confirm that non-users do not report benefits. The odds ratio of 11.0 should not be read as an effect of the Virtual TA on learning. The dose–response results within users only (T12, T13, T17) avoid this problem and are the more informative comparisons, because everyone in them used the tool.</p>
+  </div>
+
+  <div class="two-read">
+    <div>
+      <h4>What this shows</h4>
+      <p>Restricted to users, the pattern separates cleanly by outcome type. Heavier use tracks <b>efficiency</b> gains (ρ = 0.318, p = .005; median intensity 2.0 among those reporting a benefit vs. 1.0 among those not) and modestly tracks <b>confidence</b> (ρ = 0.261), but has <b>no relationship at all with deeper understanding</b> (ρ = −0.001). Students who used it more also wanted it more (T18, T19) without reporting more quality problems (T20).</p>
+    </div>
+    <div>
+      <h4>What this does not show</h4>
+      <p>Direction is unrecoverable: students who found the tool useful plausibly used it more, rather than use producing the benefit. T18 and T19 may be measuring enthusiasm, not outcomes. Six of the seven exploratory tests were chosen after seeing the data, and several contingency tables carry expected cell counts below 5, so their χ² approximations are unreliable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ LIMITS ══════════ -->
+<section>
+  <div class="sec-head">
+    <div class="keyline"></div>
+    <p class="eyebrow">Constraints on every number above</p>
+    <h2>What this survey cannot answer</h2>
+  </div>
+
+  <ul class="plain">
+    <li><b>No objective outcome measure exists in the data.</b> Grades, scores and completion times are absent. Every result is a self-report of perception, so the survey can establish what students believed about their learning and nothing about their learning itself.</li>
+    <li><b>The design is cross-sectional with no comparison group.</b> There is no pre/post measurement and no cohort without a Virtual TA. Causal language is unsupported for every finding, including the significant ones.</li>
+    <li><b>Non-users answered experience-based items.</b> All 19 recorded a session length and a usage purpose despite reporting no use, so any percentage over all 97 on an experience item contains responses that cannot be interpreted.</li>
+    <li><b>Four items forced a single choice among statements that are not mutually exclusive.</b> The depth, outcome, strategy and adherence percentages are shares of a forced pick and understate how many students would have endorsed each statement.</li>
+    <li><b>Only one Likert item was asked</b>, and 55.7% answered it “Neutral”. No multi-item scale exists, so no reliability coefficient (α or ω), factor analysis or scale-level comparison is possible — the methods in Chapters 8 and 9 of the project handbook could not be applied.</li>
+    <li><b>No regression model was fitted.</b> All inference is bivariate, so none of the associations is adjusted for the others; the confounding between use intensity, enthusiasm and prior AI habit remains unmodelled.</li>
+    <li><b>Sensitive items invite under-reporting.</b> The 6.2% who reported submitting AI-generated solutions with minimal modification and the 8.2% who reported use they thought the instructor would not approve are lower bounds under social-desirability pressure.</li>
+    <li><b>The response rate is unknown</b> and the sample comes from one course in one semester, skewed toward Juniors (52.6%). Generalisation beyond this cohort is not supported.</li>
+    <li><b>Multiplicity is only partly controlled.</b> BH correction was applied across the six pre-specified χ² tests; the Spearman set and the seven exploratory cross-checks were adjusted separately, and exploratory findings need replication before being treated as results.</li>
+  </ul>
+
+  <h3>The four sentences the data does support</h3>
+  <p class="note">Roughly four in five students tried the Virtual TA, but engagement was shallow and assessment-driven — a third used it once or twice, sessions were mostly under 15 minutes, and 4.1% used it consistently. Among users, a majority reported help with understanding concepts (56.4%) and with getting unstuck (56.4%), while about a quarter reported no effect on either. When forced to choose one statement about depth, the cohort split evenly between improved reasoning and worry about dependence. And within users, more use went with more efficiency and more confidence but showed no relationship with deeper understanding.</p>
+</section>
+
+<footer>
+  Source: “Student Survey — Did the Virtual TA help make your learning easier and more effective” (act_data and cleaned_data sheets, 97 rows).<br>
+  All figures recomputed from the raw workbook by <span style="font-family:var(--mono)">scripts/summary_statistics.py</span>; proportions carry Wilson 95% confidence intervals. Tests: Pearson χ² with Cramér’s V, Fisher’s exact, Spearman ρ, Mann–Whitney U with rank-biserial r, Kruskal–Wallis H with ε², Benjamini–Hochberg FDR at α = .05.<br>
+  Null results are reported at equal weight with significant ones; no finding has been omitted.
+</footer>
+
+</div>
